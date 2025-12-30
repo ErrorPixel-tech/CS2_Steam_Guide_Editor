@@ -143,6 +143,18 @@ let MOCKDATA = [];
 function loadState() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) MOCKDATA = JSON.parse(saved);
+    else {
+        MOCKDATA = [{
+        icon: "🚬",
+        mouseButton: "ЛКМ",
+        movement: "Прыжок",
+        title: "Дым в окно",
+        subtitle: "Короткое текстовое описание раскидки",
+        imageId: "",
+        images: ["[screenshot=3631986752;sizeFull,inline;https://images.steamusercontent.com/ugc/12387406899713426751/AFDC03049ECCF9512E2C47A06FEFE00F0A821C80/][/screenshot]", "[screenshot=3631986624;sizeFull,inline;https://images.steamusercontent.com/ugc/11813492859766757302/6C2588F3FFA4A0E3B64976991B24E7707D33F1B1/][/screenshot]"],
+        keys: "[keys]",
+    }];
+    }
 }
 
 function saveState() {
