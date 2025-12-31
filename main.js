@@ -352,14 +352,14 @@ elements.list.addEventListener("input", function (event) {
         // console.log(img);
         img.src = steamImageHTMLToImageLink(input.value); // тут меняется текст параграфа
         // img.src = input.value; // тут меняется текст параграфа
-        img.alt = "alt"; // тут меняется текст параграфа
+        img.alt = "image-1"; // тут меняется текст параграфа
         MOCKDATA[li.dataset.id].images[0] = input.value.trim();
     }
     if (input.classList.contains('template__input--img-2')) {
         const li = input.closest('li');
         const img = li.querySelector('.preview__img-2');
         img.src = steamImageHTMLToImageLink(input.value); // тут меняется текст параграфа
-        img.alt = "alt"; // тут меняется текст параграфа
+        img.alt = "image-2"; // тут меняется текст параграфа
         MOCKDATA[li.dataset.id].images[1] = input.value.trim();
     }
     saveState();
