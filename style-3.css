@@ -57,5 +57,5 @@ html {
 
     height: 150px;
 width: auto;
-    align-self: center;
+    align-self: flex-start;
 }
